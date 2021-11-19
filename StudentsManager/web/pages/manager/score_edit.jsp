@@ -24,8 +24,8 @@
 <div id="main">
     <div id="inner1">
             <form action="scoreManagerServlet" method="get">
-                <input type="hidden" name="action" value="${empty param.studentID? "add":"update"}">
-                <input type="hidden" name="studentID" value="${requestScope.scoreList.studentID}">
+                <input type="hidden" name="action" value="${empty param.id? "add":"update"}">
+                <input type="hidden" name="id" value="${requestScope.scoreList.id}">
 
                 <table>
                     <tr>
@@ -39,12 +39,12 @@
                     </tr>
                     <tr>
                         <td><input type="text" name="studentID" value="${requestScope.scoreList.studentID}"></td>
-                        <td><input type="text" name="studentID" value="${requestScope.scoreList.username}"></td>
-                        <td><input type="text" name="studentID" value="${requestScope.scoreList.grade}"></td>
-                        <td><input type="text" name="studentID" value="${requestScope.scoreList.major}"></td>
-                        <td><input type="text" name="studentID" value="${requestScope.scoreList.teacher}"></td>
-                        <td><input type="text" name="studentID" value="${requestScope.scoreList.subject}"></td>
-                        <td><input type="text" name="studentID" value="${requestScope.scoreList.score}"></td>
+                        <td><input type="text" name="username" value="${requestScope.scoreList.username}"></td>
+                        <td><input type="text" name="grade" value="${requestScope.scoreList.grade}"></td>
+                        <td><input type="text" name="major" value="${requestScope.scoreList.major}"></td>
+                        <td><input type="text" name="teacher" value="${requestScope.scoreList.teacher}"></td>
+                        <td><input type="text" name="subject" value="${requestScope.scoreList.subject}"></td>
+                        <td><input type="text" name="score" value="${requestScope.scoreList.score}"></td>
                         <td><input type="submit" value="提交"/></td>
                     </tr>
                 </table>

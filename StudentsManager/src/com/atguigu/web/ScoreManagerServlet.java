@@ -12,13 +12,12 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.lang.reflect.Method;
-import java.util.List;
 
 public class ScoreManagerServlet extends HttpServlet {
     private PageScoreService pageScoreService=new PageScoreServiceImpl();
 
     protected void load(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        int pageNo = WebUtils.parseInt(req.getParameter("PageNo"), 1);
+        int pageNo = WebUtils.parseInt(req.getParameter("pageNo"), 1);
         Page<ScoreList> page = pageScoreService.page(pageNo);
         req.setAttribute("page",page);
         req.getRequestDispatcher("pages/manager/scoreManager.jsp").forward(req,resp);
@@ -44,9 +43,9 @@ public class ScoreManagerServlet extends HttpServlet {
         req.getRequestDispatcher("pages/manager/score_edit.jsp").forward(req,resp);
     }
 
-    protected void queryScores(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        pageScoreService.queryScores(req.getParameter("studentID"));
-    }
+//    protected void queryScores(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+//        pageScoreService.queryScores(req.getParameter("studentID"));
+//    }
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String action = req.getParameter("action");

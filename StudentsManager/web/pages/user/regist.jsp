@@ -63,7 +63,7 @@
                         <br/>
                         <br/>
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        <input type="radio" name="role" checked="checked" value="students">学生&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="radio" name="role" checked="checked" value="student">学生&nbsp;&nbsp;&nbsp;&nbsp;
                         <input type="radio" name="role"  value="teacher">老师&nbsp;&nbsp;&nbsp;&nbsp;
                         <input type="radio" name="role"  value="root">管理员
                         <br />

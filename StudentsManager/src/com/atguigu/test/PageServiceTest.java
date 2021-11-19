@@ -11,4 +11,9 @@ public class PageServiceTest {
         PageScoreService pageScoreService =new PageScoreServiceImpl();
         System.out.println(pageScoreService.page(2));
     }
+    @Test
+    public void pagetest(){
+        PageScoreService pageScoreService =new PageScoreServiceImpl();
+        System.out.println(pageScoreService.queryScore("2018440001","高数一"));
+    }
 }

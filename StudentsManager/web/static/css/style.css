@@ -288,7 +288,7 @@ h1 {
 	margin-left: auto;
 	margin-top: auto;
 	border: 1px #39987c solid;
-/*	overflow: auto;*/
+	overflow: auto;
 }
 .index_2{
 	background-color: snow;

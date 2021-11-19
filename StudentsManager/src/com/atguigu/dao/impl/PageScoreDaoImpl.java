@@ -32,7 +32,7 @@ public class PageScoreDaoImpl extends BaseDao implements PageScoreDao {
     }
     @Override
     public ScoreList queryScoreByStudentIDAndSubject(String studentID,String subject) {
-        String sql="select studentID,username,teacher,subject,major,grade,score from scorelist where studentID=?,subject=?";
+        String sql="select studentID,username,teacher,subject,major,grade,score from scorelist where studentID=? and subject=?";
         return queryForOne(ScoreList.class,sql,studentID,subject);
     }
 
